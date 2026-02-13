@@ -107,11 +107,14 @@ h1{
 }
 
 .view-more{
-    display: block;
-    text-align: center;
+    text-align: right;
     color: black;
     text-decoration: underline;
     font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+   
 }
 
 footer{
@@ -130,6 +133,14 @@ footer p{
     font-weight: normal;
 }
 
+button{
+ border: none;
+ background: none;
+}
+
+.show{
+    display: block;
+}
 
 @media(min-width: 1024px){
         
@@ -166,6 +177,9 @@ footer p{
         display: block;
     }
     
+    .view-more{
+        display: none;
+    }
     .blog-one{
         grid-area: one;
     }
